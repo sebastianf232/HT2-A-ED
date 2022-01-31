@@ -1,6 +1,12 @@
 /**
  * Defines all the methods that a Stack should have.
+ * Universidad del Valle de Guatemala
+ * Hoja de Trabajo No.2
  * @param <E> Type of the items stored on the Stack. Example: String
+ * @file Stack
+ * @author Sebastián Franco 21484
+ * @author Juan Miguel Gonzalez-Campo 21077
+ * @author Dimitri Badani 20092
  */
 public interface Stack<E> {
     /**
