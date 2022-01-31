@@ -1,3 +1,5 @@
+import java.util.Vector;
+
 /**
  * Algoritmos y Estructuras de Datos
  * Universidad del Valle de Guatemala
@@ -9,36 +11,42 @@
  * @author Dimitri Badani 20092
  */
 
-public class StackG3 implements Stack{
+public class StackG3<E> implements Stack<E>{
+
+    Vector<E> v = new Vector<E>();
 
     @Override
-    public void add(Object item) {
-        // TODO Auto-generated method stub
-        
+    public void add(E item) {
+        v.addElement(item);
     }
 
     @Override
-    public Object remove() {
-        // TODO Auto-generated method stub
+    public E remove() {
+        if (v.size()>0){
+            return v.remove(v.size()-1);
+        }
         return null;
     }
 
     @Override
-    public Object peek() {
-        // TODO Auto-generated method stub
+    public E peek() {
+        if (v.size()>0){
+            return v.get(v.size()-1);
+        }
         return null;
     }
 
     @Override
     public boolean empty() {
-        // TODO Auto-generated method stub
-        return false;
+        if(v.size()>0){
+            return false;
+        }
+        return true;
     }
 
     @Override
     public int size() {
-        // TODO Auto-generated method stub
-        return 0;
+        return v.size();
     }
     
 }
