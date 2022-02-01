@@ -13,12 +13,18 @@ import java.io.FileReader;
 import java.util.ArrayList;
 
 public class Main {
+/**
+ * Se importa el txt. y se crea un ArrayList para guardar sus elementos.
+ */
 static String path = "datos.txt";
 static String line = null;
 static ArrayList<String> a = new ArrayList<String>();
 
 public static void leerArchivo(){
     try {
+        /**
+         * Mientras haya un archivo, se lee.
+         */
         BufferedReader reader = new BufferedReader(new FileReader(path));
         while((line = reader.readLine()) != null){
             a.add(line);
@@ -28,6 +34,9 @@ public static void leerArchivo(){
     }
 }
 public static void cambiarLista(){
+    /**
+     * Se lee la nueva linea del archivo de texto.
+     */
     for (int i = 0; i < a.size(); i++) {
         a.get(i).split(" ");
     }
