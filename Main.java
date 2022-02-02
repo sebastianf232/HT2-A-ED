@@ -1,3 +1,4 @@
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 /**
@@ -11,6 +12,7 @@ import java.io.FileReader;
  * @author Dimitri Badani 20092
  */
 import java.util.ArrayList;
+
 
 public class Main {
 /**
@@ -43,7 +45,7 @@ public static void cambiarLista(){
 }
 
 
-	public static void main(String args[]) {
+    public static void main(String args[]) {
         CalculatorG3 calc = new CalculatorG3();
         double respuesta;
         leerArchivo();
@@ -54,3 +56,4 @@ public static void cambiarLista(){
 
     }
 }
+
