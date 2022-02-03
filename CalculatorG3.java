@@ -1,3 +1,7 @@
+import static org.junit.Assert.assertEquals;
+import org.junit.Assert;
+import org.junit.Test;
+import org.junit.*;
 /**
  * Algoritmos y Estructuras de Datos
  * Universidad del Valle de Guatemala
@@ -32,7 +36,7 @@ public class CalculatorG3 implements Calculator{
                 stack.remove();
                 oper2 = stack.peek();
                 stack.remove();
-                res = oper1 + oper2;
+                res = oper2 + oper1;
                 stack.add(res);
             /**
              * Permite ver si el simbolo de entrada es una resta.
@@ -42,7 +46,7 @@ public class CalculatorG3 implements Calculator{
                 stack.remove();
                 oper2 = stack.peek();
                 stack.remove();
-                res = oper1 - oper2;
+                res = oper2 - oper1;
                 stack.add(res);
             /**
              * Permite ver si el simbolo de entrada es una multiplicacion.
@@ -52,7 +56,7 @@ public class CalculatorG3 implements Calculator{
                 stack.remove();
                 oper2 = stack.peek();
                 stack.remove();
-                res = oper1 * oper2;
+                res = oper2 * oper1;
                 stack.add(res);
                 
             /**
@@ -63,7 +67,7 @@ public class CalculatorG3 implements Calculator{
                 stack.remove();
                 oper2 = stack.peek();
                 stack.remove();
-                res = oper1 / oper2;
+                res = oper2 / oper1;
                 stack.add(res);
                 
                
